@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015AED5D1899663A007D03A3 /* BRLOptionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFF6F44186D21E300BF640A /* BRLOptionParser.m */; };
+		015AED5F1899663A007D03A3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFF6F3A186D21E300BF640A /* Cocoa.framework */; };
 		DCFF6F3B186D21E300BF640A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFF6F3A186D21E300BF640A /* Cocoa.framework */; };
 		DCFF6F45186D21E300BF640A /* BRLOptionParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFF6F44186D21E300BF640A /* BRLOptionParser.m */; };
 		DCFF6F4C186D21E300BF640A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFF6F4B186D21E300BF640A /* XCTest.framework */; };
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		015AED641899663A007D03A3 /* BRLOptionParserStatic.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = BRLOptionParserStatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F26DB55E64B49E99E1661F2 /* Pods-BRLOptionParserTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRLOptionParserTests.xcconfig"; path = "Pods/Pods-BRLOptionParserTests.xcconfig"; sourceTree = "<group>"; };
 		7D76A699FBFA4FE39F9BD0B2 /* libPods-BRLOptionParserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BRLOptionParserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFF6F37186D21E300BF640A /* BRLOptionParser.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = BRLOptionParser.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +49,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		015AED5E1899663A007D03A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				015AED5F1899663A007D03A3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCFF6F34186D21E300BF640A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,6 +95,7 @@
 			children = (
 				DCFF6F37186D21E300BF640A /* BRLOptionParser.dylib */,
 				DCFF6F4A186D21E300BF640A /* BRLOptionParserTests.xctest */,
+				015AED641899663A007D03A3 /* BRLOptionParserStatic.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,6 +160,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		015AED601899663A007D03A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCFF6F35186D21E300BF640A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,6 +177,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		015AED5B1899663A007D03A3 /* BRLOptionParserStatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 015AED611899663A007D03A3 /* Build configuration list for PBXNativeTarget "BRLOptionParserStatic" */;
+			buildPhases = (
+				015AED5C1899663A007D03A3 /* Sources */,
+				015AED5E1899663A007D03A3 /* Frameworks */,
+				015AED601899663A007D03A3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BRLOptionParserStatic;
+			productName = BRLOptionParser;
+			productReference = 015AED641899663A007D03A3 /* BRLOptionParserStatic.a */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		DCFF6F36186D21E300BF640A /* BRLOptionParser */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCFF6F5B186D21E300BF640A /* Build configuration list for PBXNativeTarget "BRLOptionParser" */;
@@ -223,6 +259,7 @@
 			targets = (
 				DCFF6F36186D21E300BF640A /* BRLOptionParser */,
 				DCFF6F49186D21E300BF640A /* BRLOptionParserTests */,
+				015AED5B1899663A007D03A3 /* BRLOptionParserStatic */,
 			);
 		};
 /* End PBXProject section */
@@ -272,6 +309,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		015AED5C1899663A007D03A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				015AED5D1899663A007D03A3 /* BRLOptionParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCFF6F33186D21E300BF640A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,6 +355,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		015AED621899663A007D03A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = a;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRLOptionParser/BRLOptionParser-Prefix.pch";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = BRLOptionParserStatic;
+			};
+			name = Debug;
+		};
+		015AED631899663A007D03A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = a;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BRLOptionParser/BRLOptionParser-Prefix.pch";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = BRLOptionParserStatic;
+			};
+			name = Release;
+		};
 		DCFF6F59186D21E300BF640A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -445,6 +516,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		015AED611899663A007D03A3 /* Build configuration list for PBXNativeTarget "BRLOptionParserStatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015AED621899663A007D03A3 /* Debug */,
+				015AED631899663A007D03A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCFF6F32186D21E300BF640A /* Build configuration list for PBXProject "BRLOptionParser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
